@@ -101,5 +101,9 @@ st.plotly_chart(fig, use_container_width=True)
 st.write("")
 st.write("")
 
-# Vis kun logoet i en større version, centreret på siden
-st.image("logo.png", width=300)
+# Opret to kolonner, hvor den første er bred (4 dele) og den næste er smal (1 del)
+col_tom, col_logo = st.columns([4, 1])
+
+with col_logo:
+    # Viser logoet i en større version helt ude til højre
+    st.image("logo.png", width=300)
