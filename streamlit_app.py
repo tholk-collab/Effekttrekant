@@ -110,4 +110,4 @@ with col_text:
 
 with col_logo:
     # Indsæt din PNG-fil (tilpas width i pixels, så det passer til dit logo)
-    st.image("logo.png", width=80)
+    st.image("Logo.png", width=80)
