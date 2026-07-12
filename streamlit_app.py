@@ -106,4 +106,5 @@ col_tom, col_logo = st.columns([4, 1])
 
 with col_logo:
     # Viser logoet i en større version helt ude til højre
-    st.image("logo.png", width=300)
+    st.image("Logo.png", width=300)
+    
