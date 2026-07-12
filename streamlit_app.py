@@ -97,3 +97,17 @@ fig.update_layout(
 
 # Vis grafen i Streamlit
 st.plotly_chart(fig, use_container_width=True)
+# Lav en pæn afstand under grafen
+st.write("")
+st.write("")
+
+# Opret to kolonner for at placere tekst og billede pænt ved siden af hinanden
+col_text, col_logo = st.columns([3, 1])
+
+with col_text:
+    # Indsæt teksten med kursiv og dæmpet grå farve
+    st.write("*Made by Thomas Lundberg*")
+
+with col_logo:
+    # Indsæt din PNG-fil (tilpas width i pixels, så det passer til dit logo)
+    st.image("logo.png", width=80)
